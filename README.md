@@ -2,7 +2,9 @@
 
 By [Mary Dickson](www.marydickson.info).
 
-## Description This is a ruby coding challenge that contains a classic fizzbuzz solution and a custom fizzbuzz method.
+## Description
+
+This is a ruby coding challenge that contains a classic fizzbuzz solution and a custom fizzbuzz method.
 
 ## Usage
 

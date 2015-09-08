@@ -1,3 +1,5 @@
+# This is an example from class
+
 class Fixnum
   def fizzbuzz
     str = self % 3 == 0 ? 'Fizz' : ''
@@ -7,3 +9,4 @@ class Fixnum
 end
 
 p (1..30).map(&:fizzbuzz)
+
