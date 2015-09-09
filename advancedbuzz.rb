@@ -13,21 +13,13 @@ end
 # fizzbuzz(7, "Sivv")
 
 def fizzbuzzhash(options)
-  divisors = []
-  outputs = []
   count = options.count
-
-  options.each do |divisor, output|
-    divisors << divisor
-    outputs << output
-  end
-
   (1..50000).each do |i|
     result = ""
     result << "Fizz" if i % 3 == 0
     result << "Buzz" if i % 5 == 0
-    count.times do |custom|
-      result << outputs[custom] if i % divisors[custom] == 0
+    count.times do |t|
+      result << options.values[t] if i % options.keys[t] == 0
     end
     result << i.to_s if result == ""
     puts result
@@ -35,5 +27,5 @@ def fizzbuzzhash(options)
 end
 
 # test it's working
-# myoptions = {7 => "Sivv", 13 => "Grr"}
-# fizzbuzzhash(myoptions)
+myoptions = {7 => "Sivv", 13 => "Grr"}
+fizzbuzzhash(myoptions)
