@@ -12,12 +12,11 @@ end
 # test it's working
 # fizzbuzz(7, "Sivv")
 
-def fizzbuzzhash(options)
-  count = options.count
-  (1..50000).each do |i|
+def fizzbuzzhash(options, top_limit)
+  (1..top_limit).each do |i|
     result = ""
-    count.times do |t|
-      result << options.values[t] if i % options.keys[t] == 0
+    options.count.times do |t|
+      result << options.values[t] if i.modulo(options.keys[t]).zero?
     end
     result << i.to_s if result == ""
     puts result
@@ -25,5 +24,5 @@ def fizzbuzzhash(options)
 end
 
 # test it's working
-myoptions = {3 => "Fizz", 5 => "Buzz", 7 => "Sivv", 13 => "Grr"}
-fizzbuzzhash(myoptions)
+customer_options = {3 => "Fizz", 5 => "Buzz", 7 => "Sivv", 13 => "Grr"}
+fizzbuzzhash(customer_options, 400)
