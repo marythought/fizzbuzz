@@ -9,14 +9,12 @@ This is a ruby coding challenge that contains a classic fizzbuzz solution and a 
 ## Usage
 
 ruby fizzbuzz.rb
-call method fizzbuzz(toplimit) for standard fizzbuzz
+* call method fizzbuzz(toplimit) for standard fizzbuzz (returned as a string with space-seperated values)
 
 ruby advancedbuzz.rb
-call method fizzbuzzhash(option) for custom fizzbuzz: where option is a hash
-
-ex:
-myoptions = {7 => "Sivv", 13 => "Grr"}
-fizzbuzzhash(myoptions)
+* call method fizzbuzzhash(options, top_limit) for custom fizzbuzz: where option is a hash, ex: myoptions = {7 => "Sivv", 13 => "Grr"}; fizzbuzzhash(myoptions, 100)
+* call method fizzbuzz(divisor, output, top_limit) for just one custom divisor and output, ex: fizzbuzz(7, "Sivv", 100)
+* both return as "puts" to console
 
 ## Contributing
 
